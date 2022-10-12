@@ -45,3 +45,8 @@ p {
   margin-left: 15px;
   font-weight: bold;
 }
+
+.flag-field {
+  display: flex;
+  align-items: center;
+}

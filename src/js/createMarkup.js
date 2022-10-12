@@ -14,9 +14,17 @@ export function createCountryMarkup({
 }) {
   const language = Object.values(languages).join(', ');
 
-  return `<img src="${flags.svg}" alt="flag" width="60" height="40">
-      <span class='country-name'>${name.official}</span>
-      <p><span class='span-style'>Capital:</span> ${capital}</p>
-      <p><span class='span-style'>Population:</span> ${population}</p>
-      <p><span class='span-style'>Languages:</span> ${language}</p>`;
+  return `<p class='flag-field'>
+            <img src="${flags.svg}" alt="flag" width="60" height="40">
+            <span class='country-name'>${name.official}</span>
+         </p>
+      <p>
+        <span class='span-style'>Capital:</span> ${capital}
+      </p>
+      <p>
+        <span class='span-style'>Population:</span> ${population}
+      </p>
+      <p>
+        <span class='span-style'>Languages:</span> ${language}
+      </p>`;
 }
